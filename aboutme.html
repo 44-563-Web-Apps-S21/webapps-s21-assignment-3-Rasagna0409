@@ -5,6 +5,58 @@
             <h1>Mysterious Mermaid</h1>
             <p>Mysterious Mermaid has super powers of communicating with creatures underwater and she helps in reducing the polution under the sea created by humans </p>
             <a href="Mermaid.jpg" style="font-family:'Courier New'">Click here for Image</a>
+            <hr>
+            <h2>My suggestions for places to visit </h2>
+            
+
+            <table style="width:100%">
+                <tr>
+                  <th>Location</th>
+                  <th>Expenditure </th>
+                  <th>No.of hours</th>
+                </tr>
+                <tr>
+                  <td>Kerala</td>
+                  <td>300</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Agra</td>
+                  <td>400</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                    <td>Kashmir</td>
+                    <td>200</td>
+                    <td>5</td>
+                  </tr>
+                <tr>
+                    <td>Goa</td>
+                    <td>700</td>
+                    <td>8</td>
+                </tr>                
+              </table>    
+            <hr>
+            <h2>Google Apps Script</h2>
+        
+            <blockquote>Apps Script is a scripting platform developed by Google for light-weight application development in the Google Workspace platform. Google Apps Script was initially developed by Mike Harm as a side project whilst working as a developer on Google Sheets</blockquote>
+            <pre>function createAndSendDocument() {
+                var doc = DocumentApp.create('Hello, world!');
+              
+                doc.getBody().appendParagraph('This document was created by Google Apps Script.');
+              
+                var url = doc.getUrl();
+              
+                var email = Session.getActiveUser().getEmail();
+              
+                var subject = doc.getName();
+
+                var body = 'Link to your doc: ' + url;
+              
+                GmailApp.sendEmail(email, subject, body);
+              }</pre>
+              <a href="https://developers.google.com/apps-script/overview#your_first_script">Source code</a>
+ 
             
         </body>
     </head>
